@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Des_Fuze" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.des_fuze.view.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -3,14 +3,13 @@
 
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="16dp"
     android:layout_marginTop="20dp"
     android:layout_marginEnd="16dp"
     android:layout_marginRight="16dp"
-    android:background="#0FFFFFFF"
+    android:background="#00FFFFFF"
     app:cardBackgroundColor="#80FFFFFF"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +27,7 @@
             android:layout_height="65dp"
             android:layout_marginStart="72dp"
             android:layout_marginTop="32dp"
-            android:background="#B4FFFFFF"
+            android:background="#C4C4C4"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,11 +35,12 @@
             android:id="@+id/imagemLiga"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
-            android:background="#B4FFFFFF"
+            android:background="#C4C4C4"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/imagemTime_1"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linha"
             app:layout_constraintVertical_bias="0.0" />
 
@@ -48,13 +48,12 @@
             android:id="@+id/imagemTime_2"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:layout_marginStart="16dp"
             android:layout_marginEnd="72dp"
-            android:background="#B4FFFFFF"
+            android:background="#C4C4C4"
             app:layout_constraintBottom_toBottomOf="@+id/imagemTime_1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textoVs"
+            app:layout_constraintStart_toEndOf="@+id/imagemTime_1"
             app:layout_constraintTop_toTopOf="@+id/imagemTime_1"
             app:layout_constraintVertical_bias="0.0" />
 
@@ -62,24 +61,23 @@
             android:id="@+id/textoVs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="175dp"
-            android:background="#0DFFFFFF"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="#00FFFFFF"
             android:text="VS"
             android:textColor="#80FFFFFF"
             app:layout_constraintBottom_toBottomOf="@+id/imagemTime_2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.784"
+            app:layout_constraintEnd_toStartOf="@+id/imagemTime_2"
             app:layout_constraintStart_toEndOf="@+id/imagemTime_1"
-            app:layout_constraintTop_toTopOf="@+id/imagemTime_1"
-            app:layout_constraintVertical_bias="0.543" />
+            app:layout_constraintTop_toTopOf="@+id/imagemTime_1" />
 
         <TextView
             android:id="@+id/nomeTime_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:textColor="#FFFFFF"
             android:text="time 1"
+            android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="@+id/imagemTime_1"
             app:layout_constraintStart_toStartOf="@+id/imagemTime_1"
             app:layout_constraintTop_toBottomOf="@+id/imagemTime_1" />
@@ -89,8 +87,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:textColor="#FFFFFF"
             android:text="time 2"
+            android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="@+id/imagemTime_2"
             app:layout_constraintStart_toStartOf="@+id/imagemTime_2"
             app:layout_constraintTop_toBottomOf="@+id/imagemTime_2" />
@@ -111,8 +109,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:textColor="#FFFFFF"
             android:text="liga"
+            android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="@+id/imagemLiga"
             app:layout_constraintStart_toEndOf="@+id/imagemLiga"
             app:layout_constraintTop_toTopOf="@+id/imagemLiga" />
@@ -122,13 +120,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:textColor="#FFFFFF"
             android:text="serie"
+            android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="@+id/textoLiga"
             app:layout_constraintStart_toEndOf="@+id/textoLiga" />
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/textoData"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="80dp"
