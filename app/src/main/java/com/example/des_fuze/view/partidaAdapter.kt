@@ -38,7 +38,7 @@ class partidaAdapter(
             val textoSerie = findViewById<TextView>(R.id.textoSerie)
             val textoData = findViewById<TextView>(R.id.textoData)
 
-            // TODO: Load image with Glide
+            //TODO: Load image with Glide
 
             nomeTime_1.text = item.nameTime_1
             nomeTime_2.text = item.nameTime_2

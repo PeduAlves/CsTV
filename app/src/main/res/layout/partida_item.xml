@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
+
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="16dp"
@@ -15,129 +17,136 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/cardButton"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#272639">
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#272639">
 
 
-        <ImageView
-            android:id="@+id/imagemTime_1"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_marginStart="72dp"
-            android:layout_marginTop="32dp"
-            android:background="#C4C4C4"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/imagemTime_1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="32dp"
+                android:background="#C4C4C4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imagemLiga"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:background="#C4C4C4"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linha"
-            app:layout_constraintVertical_bias="0.0" />
+            <ImageView
+                android:id="@+id/imagemLiga"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#C4C4C4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linha"
+                app:layout_constraintVertical_bias="0.0" />
 
-        <ImageView
-            android:id="@+id/imagemTime_2"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_marginEnd="72dp"
-            android:background="#C4C4C4"
-            app:layout_constraintBottom_toBottomOf="@+id/imagemTime_1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/imagemTime_1"
-            app:layout_constraintTop_toTopOf="@+id/imagemTime_1"
-            app:layout_constraintVertical_bias="0.0" />
+            <ImageView
+                android:id="@+id/imagemTime_2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="72dp"
+                android:background="#C4C4C4"
+                app:layout_constraintBottom_toBottomOf="@+id/imagemTime_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/imagemTime_1"
+                app:layout_constraintTop_toTopOf="@+id/imagemTime_1"
+                app:layout_constraintVertical_bias="0.0" />
 
-        <TextView
-            android:id="@+id/textoVs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="#00FFFFFF"
-            android:text="VS"
-            android:textColor="#80FFFFFF"
-            app:layout_constraintBottom_toBottomOf="@+id/imagemTime_2"
-            app:layout_constraintEnd_toStartOf="@+id/imagemTime_2"
-            app:layout_constraintStart_toEndOf="@+id/imagemTime_1"
-            app:layout_constraintTop_toTopOf="@+id/imagemTime_1" />
+            <TextView
+                android:id="@+id/textoVs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="#00FFFFFF"
+                android:text="VS"
+                android:textColor="#80FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/imagemTime_2"
+                app:layout_constraintEnd_toStartOf="@+id/imagemTime_2"
+                app:layout_constraintStart_toEndOf="@+id/imagemTime_1"
+                app:layout_constraintTop_toTopOf="@+id/imagemTime_1" />
 
-        <TextView
-            android:id="@+id/nomeTime_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="time 1"
-            android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="@+id/imagemTime_1"
-            app:layout_constraintStart_toStartOf="@+id/imagemTime_1"
-            app:layout_constraintTop_toBottomOf="@+id/imagemTime_1" />
+            <TextView
+                android:id="@+id/nomeTime_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="time 1"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="@+id/imagemTime_1"
+                app:layout_constraintStart_toStartOf="@+id/imagemTime_1"
+                app:layout_constraintTop_toBottomOf="@+id/imagemTime_1" />
 
-        <TextView
-            android:id="@+id/nomeTime_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="time 2"
-            android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="@+id/imagemTime_2"
-            app:layout_constraintStart_toStartOf="@+id/imagemTime_2"
-            app:layout_constraintTop_toBottomOf="@+id/imagemTime_2" />
+            <TextView
+                android:id="@+id/nomeTime_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="time 2"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="@+id/imagemTime_2"
+                app:layout_constraintStart_toStartOf="@+id/imagemTime_2"
+                app:layout_constraintTop_toBottomOf="@+id/imagemTime_2" />
 
-        <ImageView
-            android:id="@+id/linha"
-            android:layout_width="0dp"
-            android:layout_height="1.5dp"
-            android:layout_marginTop="16dp"
-            android:background="#32FFFFFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nomeTime_1" />
+            <ImageView
+                android:id="@+id/linha"
+                android:layout_width="0dp"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="16dp"
+                android:background="#32FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nomeTime_1" />
 
-        <TextView
-            android:id="@+id/textoLiga"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="liga"
-            android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="@+id/imagemLiga"
-            app:layout_constraintStart_toEndOf="@+id/imagemLiga"
-            app:layout_constraintTop_toTopOf="@+id/imagemLiga" />
+            <TextView
+                android:id="@+id/textoLiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="liga"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/imagemLiga"
+                app:layout_constraintStart_toEndOf="@+id/imagemLiga"
+                app:layout_constraintTop_toTopOf="@+id/imagemLiga" />
 
-        <TextView
-            android:id="@+id/textoSerie"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="serie"
-            android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="@+id/textoLiga"
-            app:layout_constraintStart_toEndOf="@+id/textoLiga" />
+            <TextView
+                android:id="@+id/textoSerie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="serie"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/textoLiga"
+                app:layout_constraintStart_toEndOf="@+id/textoLiga" />
 
-        <TextView
-            android:id="@+id/textoData"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="80dp"
-            android:background="#F42A35"
-            android:text="Agora"
-            android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="@+id/imagemTime_2"
-            app:layout_constraintEnd_toEndOf="@+id/linha"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/imagemTime_2" />
+            <TextView
+                android:id="@+id/textoData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:background="#F42A35"
+                android:text="Agora"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/imagemTime_2"
+                app:layout_constraintEnd_toEndOf="@+id/linha"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/imagemTime_2"
+                tools:ignore="TextContrastCheck" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.chip.ChipGroup>
 </androidx.cardview.widget.CardView>
+
