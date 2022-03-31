@@ -23,15 +23,17 @@
         android:layout_height="90dp"
         android:layout_marginStart="68dp"
         android:layout_marginTop="28dp"
+        android:background="#0DFFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pageLiga"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/teste" />
 
     <ImageView
         android:id="@+id/pageImageTime_2"
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:layout_marginEnd="68dp"
+        android:background="#0CFFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/pageImageTime_1"
         tools:srcCompat="@tools:sample/avatars" />
@@ -100,6 +102,7 @@
                 android:layout_height="45dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="4dp"
+                android:background="#0CFFFFFF"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@tools:sample/avatars" />
@@ -148,6 +151,7 @@
                 android:layout_height="45dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="4dp"
+                android:background="#0CFFFFFF"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@tools:sample/avatars" />
@@ -196,6 +200,7 @@
                 android:layout_height="45dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="4dp"
+                android:background="#0CFFFFFF"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@tools:sample/avatars" />
@@ -244,6 +249,7 @@
                 android:layout_height="45dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="4dp"
+                android:background="#0CFFFFFF"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@tools:sample/avatars" />
@@ -292,6 +298,7 @@
                 android:layout_height="45dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="4dp"
+                android:background="#0CFFFFFF"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@tools:sample/avatars" />
@@ -340,6 +347,7 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
+                android:background="#0CFFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@tools:sample/avatars" />
@@ -388,6 +396,7 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
+                android:background="#0CFFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@tools:sample/avatars" />
@@ -436,6 +445,7 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
+                android:background="#0CFFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@tools:sample/avatars" />
@@ -484,6 +494,7 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
+                android:background="#0CFFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@tools:sample/avatars" />
@@ -532,6 +543,7 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
+                android:background="#0CFFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@tools:sample/avatars" />
@@ -561,12 +573,16 @@
     </androidx.cardview.widget.CardView>
 
     <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/pageSeta"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="pageSeta"
         app:layout_constraintBottom_toBottomOf="@+id/pageLiga"
         app:layout_constraintEnd_toStartOf="@+id/pageImageTime_1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/pageLiga"
-        app:srcCompat="?attr/homeAsUpIndicator" />
+        app:srcCompat="?attr/homeAsUpIndicator"
+        app:tint="#FFFFFF" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

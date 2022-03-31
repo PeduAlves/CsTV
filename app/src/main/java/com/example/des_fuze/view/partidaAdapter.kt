@@ -31,7 +31,7 @@ class partidaAdapter(
         fun bindView(item: partidasCard) = with(itemView) {
             val imagemTime_1 = findViewById<ImageView>(R.id.imagemTime_1)
             val imagemTime_2 = findViewById<ImageView>(R.id.imagemTime_2)
-            val imagemLiga = findViewById<ImageView>(R.id.imagemLiga)
+            val imagemLigaT = findViewById<ImageView>(R.id.imagemLiga)
             val nomeTime_1 = findViewById<TextView>(R.id.nomeTime_1)
             val nomeTime_2 = findViewById<TextView>(R.id.nomeTime_2)
             val textoLiga = findViewById<TextView>(R.id.textoLiga)

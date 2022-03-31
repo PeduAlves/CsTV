@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.des_fuze.R
+import com.example.des_fuze.api.partidaRepository
 import com.example.des_fuze.domain.partidasCard
 import com.example.des_fuze.view.PartidaPage as PartidaPage
 
@@ -18,8 +19,8 @@ class MainActivity : AppCompatActivity() {
 
         val match = partidasCard(
             "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",
-            "https://cdn.pandascore.co/images/team/image/125063/thumb_sengoku-gaming-gnat0l9c.png",
-            "https://cdn.pandascore.co/images/team/image/125063/thumb_sengoku-gaming-gnat0l9c.png",
+            ".",
+            ".",
             "Sengoku gaming",
             "Sengoku gaming",
             "Champions",
@@ -27,7 +28,10 @@ class MainActivity : AppCompatActivity() {
             "03/12",
             "12:00",
         )
-        val partidas = listOf(match, match, match, match)
+
+        val partidasApi = partidaRepository.getPartidas()
+
+        val partidas = listOf(match, match, match, match, match, match, match, match)
 
         val layoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = layoutManager
